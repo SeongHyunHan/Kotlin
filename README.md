@@ -1,2 +1,3 @@
 # Kotlin
-Code build with Kotlin
+
+Practice Codes using Kotlin Programming Language while learning this language
