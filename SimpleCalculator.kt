@@ -30,6 +30,6 @@ fun main(args: Array<String>){
     else if(operation == "/")
         result = n1 / n2
 
-    println("The Result: " + result)
+    println("The Result: $result")
 
 }
