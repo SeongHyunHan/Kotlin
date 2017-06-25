@@ -12,6 +12,7 @@ fun main(args: Array<String>){
     var n2:Double?
     var operation:String?
     var result:Double = 0.0
+    var hasResult:Boolean = true
 
     //getting user input
     print("Enter First Number: ")
@@ -21,15 +22,28 @@ fun main(args: Array<String>){
     print("Enter Operations (+,-,*,/): ")
     operation = readLine()
 
-    if(operation == "+")
-        result = n1 + n2
-    else if(operation == "-")
-        result = n1 - n2
-    else if(operation == "*")
-        result = n1 * n2
-    else if(operation == "/")
-        result = n1 / n2
+    when(operation) {
+        "+" -> {
+            result = n1 + n2
+        }
+        "-" -> {
+            result = n1 - n2
+        }
+        "/" -> {
+            result = n1 / n2
+        }
+        "*" -> {
+            result = n1 * n2
+        }
+        else -> {
+            println("Wrong Operation Input")
+            hasResult = false
+        }
+    }
+    if(hasResult){
+        println("The Result: $result")
+    }
 
-    println("The Result: $result")
+
 
 }
